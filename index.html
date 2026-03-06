@@ -1,0 +1,288 @@
+    <!doctype html>
+    <html lang="es">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="EmoChat — conoce tus emociones, exprésalas y empieza a cuidarte." />
+        <title>EmoChat — Empieza por sentir</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+          rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="./styles.css" />
+      </head>
+      <body>
+        <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+        <header class="site-header">
+          <nav class="nav">
+            <div class="brand">
+              <div class="brand-mark" aria-hidden="true">E</div>
+              <div class="brand-text">
+                <div class="brand-name">EmoChat</div>
+                <div class="brand-tagline">Tu mente habla. Nosotros la entendemos.</div>
+              </div>
+            </div>
+
+            <div class="nav-actions">
+              <a class="nav-link" href="#emociones">Emociones</a>
+              <a class="btn btn-primary" href="#escribe" role="button">
+                Empezar
+              </a>
+            </div>
+          </nav>
+        </header>
+
+        <main id="contenido">
+          <section class="hero">
+            <div class="container hero-grid">
+              <div class="hero-copy">
+                <p class="kicker reveal">Bienestar emocional, un paso a la vez</p>
+                <h1 class="hero-title reveal">
+                  Tu bienestar,<br />
+                  a tu propio ritmo.
+                </h1>
+                <p class="hero-subtitle reveal">
+                  Explora lo que sientes, ponle nombre y encuentra herramientas simples para
+                  acompañarte hoy.
+                </p>
+
+                <div class="hero-cta reveal">
+                  <a href="#escribe" class="btn btn-primary btn-lg" role="button">
+                    Quiero empezar
+                  </a>
+                  <a href="#emociones" class="btn btn-ghost btn-lg" role="button">
+                    Ver emociones
+                  </a>
+                </div>
+
+                <div class="hero-metrics reveal" role="list" aria-label="Beneficios">
+                  <div class="metric" role="listitem">
+                    <div class="metric-value">4</div>
+                    <div class="metric-label">emociones base</div>
+                  </div>
+                  <div class="metric" role="listitem">
+                    <div class="metric-value">1</div>
+                    <div class="metric-label">minuto para iniciar</div>
+                  </div>
+                  <div class="metric" role="listitem">
+                    <div class="metric-value">∞</div>
+                    <div class="metric-label">pequeños avances</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-art" aria-hidden="true">
+                <div class="hero-image-wrap reveal">
+                  <img
+                    src="./public/horizonte-digital-una-mirada-humana-frente-al-auge-de-la-inteligencia-artificial-en-Pinterest.png"
+                    alt="Horizonte digital: una mirada humana frente al auge de la inteligencia artificial"
+                    class="hero-image"
+                  />
+                </div>
+                <div class="swatches reveal">
+                  <div class="swatch swatch-1"></div>
+                  <div class="swatch swatch-2"></div>
+                  <div class="swatch swatch-3"></div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-wave" aria-hidden="true"></div>
+          </section>
+
+          <section class="section section-alt" id="descubre">
+            <div class="container discover-grid">
+              <div class="discover-image-wrap reveal">
+                <img
+                  src="./public/unnamed.jpg"
+                  alt="Persona en conexión con sus emociones y bienestar"
+                  class="discover-image"
+                />
+              </div>
+              <div class="discover-copy reveal">
+                <h2 class="discover-title">Descubre tus emociones con IA</h2>
+                <p class="discover-text">
+                  Nuestro proyecto combina inteligencia artificial y visión por computadora para reconocer emociones faciales en tiempo real. Usando tecnologías como Python, OpenCV y Mediapipe, analizamos los gestos y expresiones del rostro para identificar emociones como alegría, tristeza, enojo o sorpresa. Esta herramienta no solo permite visualizar cómo te sientes, sino que también puede interactuar contigo a través de un chatbot diseñado para ofrecer respuestas empáticas, fomentando el bienestar emocional y la comprensión personal de manera innovadora.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="emociones" class="section">
+            <div class="container">
+              <div class="section-head reveal">
+                <h2 class="section-title">Emociones que nos guían</h2>
+                <p class="section-subtitle">
+                  Cuatro emociones principales, explicadas con claridad y sin juicios.
+                </p>
+              </div>
+
+              <div class="cards cards--vertical">
+                <article class="card reveal" data-tilt>
+                  <div class="pill">Alegría</div>
+                  <p class="card-text">
+                    Es la emoción que sentimos cuando experimentamos bienestar, satisfacción o
+                    felicidad. Nos impulsa a compartir y conectar con otros.
+                  </p>
+                </article>
+
+                <article class="card reveal" data-tilt>
+                  <div class="pill">Tristeza</div>
+                  <p class="card-text">
+                    Surge ante pérdidas, decepciones o cambios. Nos ayuda a reflexionar y procesar
+                    lo que nos afecta, y a pedir apoyo cuando lo necesitamos.
+                  </p>
+                </article>
+
+                <article class="card card--proximamente reveal" data-tilt>
+                  <span class="card-badge" aria-hidden="true">Próximamente</span>
+                  <div class="pill">Enojo</div>
+                  <p class="card-text">
+                    Aparece cuando percibimos injusticia o frustración. Puede darnos energía para
+                    poner límites y defender lo importante, si lo regulamos.
+                  </p>
+                </article>
+
+                <article class="card card--proximamente reveal" data-tilt>
+                  <span class="card-badge" aria-hidden="true">Próximamente</span>
+                  <div class="pill">Sorpresa</div>
+                  <p class="card-text">
+                    Es una reacción breve ante algo inesperado. Abre la atención y nos prepara
+                    para adaptarnos, ya sea a lo positivo o a lo desafiante.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section id="escribe" class="section section-alt">
+            <div class="container">
+              <div class="compose">
+                <div class="compose-copy reveal">
+                  <h2 class="section-title">Tu espacio de desahogo</h2>
+                  <p class="section-subtitle">
+                    Te damos un espacio interectivo para que cuentes algún tema de tu preferencia por 30 segundos, mientras la IA analiza tu estado emocional.
+                  </p>
+
+                  <ul class="bullets" role="list">
+                    <li class="reveal">Reconocimiento facial en tiempo real</li>
+                    <li class="reveal">La IA te dará un mensaje de apoyo y ánimo al terminar</li>
+                    <li class="reveal">Tus datos nunca se guardan, 100% privado</li>
+                  </ul>
+                </div>
+
+                <div class="compose-box reveal">
+                  <div class="webcam-container" id="webcam-container">
+                    <video id="webcam" autoplay playsinline></video>
+                    <canvas id="canvas" style="display: none;"></canvas>
+                    <button id="fullscreen-btn" class="fullscreen-btn" aria-label="Pantalla completa">
+                      ⛶
+                    </button>
+                    <div class="emotion-overlay">
+                      <span id="emotion-result">Iniciando cámara...</span>
+                    </div>
+                  </div>
+
+                  <div class="webcam-context">
+                    <label for="session-context">Contexto (¿De qué vas a hablar?):</label>
+                    <textarea id="session-context" rows="2" placeholder="Ej: Me gustaría hablar sobre cómo me sentí hoy en el trabajo..."></textarea>
+                  </div>
+
+                  <div class="webcam-controls">
+                    <button
+                      id="start-btn"
+                      class="btn btn-outline"
+                      aria-label="Activar cámara"
+                    >
+                      Activar Cámara
+                    </button>
+                    <button
+                      id="stop-btn"
+                      class="btn btn-outline btn-stop"
+                      aria-label="Pausar cámara"
+                      disabled
+                    >
+                      Pausar
+                    </button>
+                    <button
+                      id="record-btn"
+                      class="btn btn-primary"
+                      aria-label="Grabar Análisis de 30s"
+                      disabled
+                    >
+                      Grabar Análisis (30s)
+                    </button>
+                  </div>
+
+                  <div class="gemini-analysis-results" style="margin-top: 20px;">
+                    <h3>Análisis de Gemini AI:</h3>
+                    <p id="gemini-result">Aquí aparecerán los resultados del análisis de tu sesión.</p>
+                  </div>
+
+                  <p class="fineprint" style="margin-top: 10px;">
+                    Tus datos faciales <strong>no</strong> se guardan. Solo se analizan en tiempo real para mostrarte la emoción.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section help-section" id="ayuda">
+            <div class="container">
+              <div class="help-block reveal">
+                <h2 class="help-title">¿Necesitas ayuda?</h2>
+                <p class="help-intro">
+                  Si estás pasando por momentos difíciles, ansiedad o depresión, no estás solo. Es importante hablar con alguien y recibir apoyo profesional. A continuación, algunos números de ayuda en Tarija:
+                </p>
+                <ul class="help-list" role="list">
+                  <li><strong>Centro de Salud Mental – Tarija:</strong> <a href="tel:+59146641234">+591 4 664-1234</a></li>
+                  <li><strong>Teléfono de Apoyo Emocional Nacional:</strong> <a href="tel:800104444">800-10-4444</a> (gratuito)</li>
+                  <li><strong>Psicólogos y Psicólogas locales:</strong> Puedes buscar servicios en tu comunidad para atención presencial.</li>
+                </ul>
+                <p class="help-close">
+                  Recuerda: pedir ayuda es un acto de valentía. Tu bienestar emocional importa.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <footer class="site-footer">
+            <div class="container footer-grid">
+              <div class="footer-brand">
+                <div class="brand">
+                  <div class="brand-mark" aria-hidden="true">E</div>
+                  <div class="brand-text">
+                    <div class="brand-name">EmoChat</div>
+                    <div class="brand-tagline">Tu mente habla. Nosotros la entendemos.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer-links">
+                <a class="nav-link" href="#contenido">Inicio</a>
+                <a class="nav-link" href="#emociones">Emociones</a>
+                <a class="nav-link" href="#escribe">Escribe</a>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="container footer-bottom-inner">
+                <small>© <span id="year"></span> EmoChat</small>
+                <small class="muted">Hecho con calma y propósito.</small>
+              </div>
+            </div>
+          </footer>
+
+          <a href="#escribe" class="fab" aria-label="Ir a la cámara" title="Ir a la cámara" data-press>
+            <span class="fab-heart" aria-hidden="true">❤</span>
+          </a>
+        </main>
+
+        <script src="./main.js" defer></script>
+      </body>
+    </html>
+
+
