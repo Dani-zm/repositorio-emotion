@@ -22,21 +22,20 @@ if not os.path.isdir(data_dir):
     )
 
 # Solo procesar estas emociones (nombres de carpetas, case-insensitive)
-ALLOWED_EMOTIONS = {"happy", "sad"}
+ALLOWED_EMOTIONS = {"happy", "sad", "angry", "surprised"}
 
 output = []
-# Procesar solo carpetas de emociones permitidas, en orden fijo: happy=0, sad=1
+# Procesar solo carpetas de emociones permitidas, en orden alfabetico
 emotion_folders = [
     e for e in sorted(os.listdir(data_dir))
     if os.path.isdir(os.path.join(data_dir, e)) and e.lower() in ALLOWED_EMOTIONS
 ]
-# Ordenar para índices consistentes: happy=0, sad=1
+# Ordenar para índices consistentes
 emotion_folders = sorted(emotion_folders, key=str.lower)
 
 if not emotion_folders:
     raise RuntimeError(
-        f"No se encontraron carpetas 'happy' o 'sad' en '{data_dir}'. "
-        f"Solo se procesan estas dos emociones."
+        f"No se encontraron carpetas con emociones en '{data_dir}'."
     )
 
 for emotion_indx, emotion in enumerate(emotion_folders):

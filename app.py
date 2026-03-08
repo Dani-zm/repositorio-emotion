@@ -16,7 +16,7 @@ from utils import get_face_landmarks
 
 app = Flask(__name__, static_folder='.', static_url_path='')
 
-emotions = ["HAPPY", "SAD"]
+emotions = ["ANGRY", "HAPPY", "SAD", "SURPRISED"]
 
 model_path = "./model"
 if not os.path.isfile(model_path):
